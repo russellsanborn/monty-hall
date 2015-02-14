@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+def groovyVersion = '2.4.0'
+def spockVersion = '0.7-groovy-2.0'
+sourceCompatibility = 1.5
+version = '1.0'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  compile group: 'org.codehaus.groovy', name: 'groovy', version: groovyVersion
+  testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
+  testRuntime group: 'cglib', name: 'cglib-nodep', version: '2.2.2'
+}
