@@ -12,3 +12,7 @@ dependencies {
   testCompile group: 'org.spockframework', name: 'spock-core', version: spockVersion
   testRuntime group: 'cglib', name: 'cglib-nodep', version: cglibVersion
 }
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.4'
+}
